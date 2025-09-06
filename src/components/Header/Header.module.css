@@ -3,10 +3,99 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 16px;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
     position: sticky;
     top: 0;
     z-index: 100;
+}
+
+.promocodeInfo {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.bonusTag {
+    background: white;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 12px 0 0 12px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promocode {
+    background: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 0 12px 12px 0;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+    flex: 1;
+    text-align: center;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.balanceInfo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: auto;
+    min-width: fit-content;
+    position: relative;
+    overflow: hidden;
+    padding-right: 24px;
+}
+
+.balanceInfo:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.02);
+}
+
+.balanceInfo:active {
+    transform: scale(0.98);
+}
+
+.addIcon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 2px;
+    background: white;
+}
+
+.balanceAmount {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.coinIcon {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: -24px;
+    top: 50%;
+    transform: translateY(-50%);
 }
