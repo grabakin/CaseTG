@@ -73,6 +73,7 @@
     position: relative;
     overflow: hidden;
     padding-right: 24px;
+    min-height: 52px;
 }
 
 .balanceInfo:hover {
