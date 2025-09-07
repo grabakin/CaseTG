@@ -32,10 +32,12 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     flex: 1;
     min-height: 36px;
+    max-height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Bowler', sans-serif;
+
 }
 
 .promocode {
