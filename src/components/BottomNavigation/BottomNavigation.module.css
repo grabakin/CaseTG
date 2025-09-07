@@ -1,6 +1,6 @@
 ﻿@font-face {
     font-family: 'Trade Gothic Pro Bold Condensed';
-    src: url('public/Trade Gothic Pro Bold Condensed 20.otf') format('opentype');
+    src: url('/Trade Gothic Pro Bold Condensed 20.otf') format('opentype');
     font-display: swap;
 }
 

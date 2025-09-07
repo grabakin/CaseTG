@@ -1,6 +1,6 @@
 ﻿@font-face {
     font-family: 'Bowler';
-    src: url('public/Bowler.ttf') format('truetype');
+    src: url('/Bowler.ttf') format('truetype');
     font-display: swap;
 }
 
@@ -43,7 +43,7 @@
 .promocode {
     background: #4CAF50;
     color: white;
-    padding: 8px 16px;
+    padding: 8px 12px;
     border-radius: 0 12px 12px 0;
     font-size: 16px;
     font-weight: bold;
