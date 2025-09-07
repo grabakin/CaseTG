@@ -60,6 +60,7 @@
 .balanceInfo {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     background: white;
     padding: 8px 16px;
@@ -72,7 +73,7 @@
     min-width: fit-content;
     position: relative;
     overflow: hidden;
-    padding-right: 24px;
+    padding-right: 40px;
     min-height: 52px;
 }
 
@@ -86,25 +87,25 @@
 }
 
 .addIcon {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    padding: 2px;
-    background: white;
-}
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+  }
 
 .balanceAmount {
     color: #333;
-    font-size: 18px;
+    font-size: 20px;
     white-space: nowrap;
     font-family: 'Bowler', sans-serif;
+    line-height: 1;
+    transform: translateY(2px);
 }
 
 .coinIcon {
-    width: 48px;
-    height: 48px;
+    width: 68px;
+    height: 68px;
     position: absolute;
-    right: -24px;
+    right: -35px;
     top: 50%;
     transform: translateY(-50%);
 }
