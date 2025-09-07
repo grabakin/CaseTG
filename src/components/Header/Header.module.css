@@ -1,6 +1,6 @@
 ﻿@font-face {
     font-family: 'Bowler';
-    src: url('/Bowler.ttf') format('truetype');
+    src: url('public/Bowler.ttf') format('truetype');
     font-display: swap;
 }
 
@@ -90,7 +90,7 @@
     width: 16px;
     height: 16px;
     object-fit: contain;
-  }
+}
 
 .balanceAmount {
     color: #333;
