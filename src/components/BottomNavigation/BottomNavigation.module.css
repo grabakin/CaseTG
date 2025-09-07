@@ -1,0 +1,62 @@
+﻿@font-face {
+    font-family: 'Trade Gothic Pro Bold Condensed';
+    src: url('public/Trade Gothic Pro Bold Condensed 20.otf') format('opentype');
+    font-display: swap;
+}
+
+.bottomNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #2a2a2a;
+    padding: 12px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    border-top: 1px solid #404040;
+}
+
+.navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    flex: 1;
+    max-width: 80px;
+}
+
+.navItem:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.navIcon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0.5) grayscale(1);
+    transition: filter 0.3s ease;
+}
+
+.navLabel {
+    font-family: 'Trade Gothic Pro Bold Condensed', sans-serif;
+    font-size: 12px;
+    color: #888;
+    transition: color 0.3s ease;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.navItem.active .navIcon {
+    filter: brightness(1) grayscale(0);
+}
+
+.navItem.active .navLabel {
+    color: white;
+}
