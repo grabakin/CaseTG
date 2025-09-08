@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Bowler';
+    src: url('/Bowler.ttf') format('truetype');
+    font-display: swap;
+}
+
+.caseCollection {
+    margin-bottom: 40px;
+}
+
+.title {
+    font-family: 'Bahnschrift Light Condensed', 'Bahnschrift', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin: 0 auto 20px;
+    padding: 12px 40px;
+    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.37) 20%, rgba(3, 3, 3, 0.37) 80%, transparent 100%);
+    width: fit-content;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.casesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+@media (max-width: 1024px) {
+    .casesGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .casesGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        max-width: 280px;
+    }
+    
+    .title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+}

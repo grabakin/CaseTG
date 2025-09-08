@@ -3,6 +3,7 @@ import Header from "./components/Header/Header.tsx";
 import BottomNavigation from "./components/BottomNavigation/BottomNavigation.tsx";
 import {type SetStateAction, useState} from "react";
 import ComingSoon from "./components/ComingSoon/ComingSoon.tsx";
+import CasesPage from "./components/CasesPage/CasesPage.tsx";
 
 function App() {
     const [activeTab, setActiveTab] = useState("cases");
@@ -14,7 +15,7 @@ function App() {
     const renderContent = () => {
         switch (activeTab) {
             case "cases":
-                return <ComingSoon pageName="Кейсы"/>;
+                return <CasesPage/>;
             case "upgrade":
                 return <ComingSoon pageName="Апгрейд"/>;
             case "contract":
