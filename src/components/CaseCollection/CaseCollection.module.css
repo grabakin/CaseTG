@@ -8,45 +8,105 @@
     margin-bottom: 40px;
 }
 
+.titleContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 .title {
     font-family: 'Bahnschrift Light Condensed', 'Bahnschrift', sans-serif;
     font-weight: 300;
     font-size: 24px;
     color: white;
     text-align: center;
-    margin: 0 auto 20px;
+    margin: 0;
     padding: 12px 40px;
-    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.37) 20%, rgba(3, 3, 3, 0.37) 80%, transparent 100%);
+    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.4) 20%, rgba(3, 3, 3, 0.4) 80%, transparent 100%);
     width: fit-content;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 0px;
+    position: relative;
+}
+
+.title::before,
+.title::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    height: 8px;
+    background: linear-gradient(to right, 
+        transparent 0%, 
+        rgba(255, 255, 255, 0.1) 20%, 
+        rgba(255, 255, 255, 0.4) 50%, 
+        rgba(255, 255, 255, 0.1) 80%, 
+        transparent 100%
+    );
+    
+    filter: blur(8px);
+    pointer-events: none;
+}
+
+.title::before {
+    top: -4px;
+}
+
+.title::after {
+    bottom: -4px;
+}
+
+.sparkle {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
 }
 
 .casesGrid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    max-width: 100%;
+    padding: 0 8px;
     margin: 0 auto;
-    justify-items: center;
 }
 
-@media (max-width: 1024px) {
-    .casesGrid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-        max-width: 320px;
-    }
+.loading, .error {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
 }
 
-@media (max-width: 768px) {
-    .casesGrid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
-        max-width: 280px;
-    }
-    
+.loading {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.error {
+    color: #ff6b6b;
+    background: rgba(255, 107, 107, 0.1);
+    border-radius: 8px;
+    margin: 0 16px;
+}
+
+@media (max-width: 720px) {
     .title {
         font-size: 20px;
-        margin-bottom: 16px;
+    }
+    
+    .casesGrid {
+        gap: 12px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .casesGrid {
+        max-width: 100%;
+        gap: 10px;
+        padding: 0 12px;
     }
 }

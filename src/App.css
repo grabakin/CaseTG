@@ -4,10 +4,19 @@ html, body {
 }
 
 .app {
-    background-color: #353434;
+    background: url('/bg.png') center center / cover no-repeat, #353434;
+    background-attachment: fixed;
+    image-rendering: auto;
+    image-rendering: smooth;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     min-height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
 
 .main-content {
     padding: 16px;
+    position: relative;
+    z-index: 2;
 }
