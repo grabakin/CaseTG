@@ -4,7 +4,7 @@ html, body {
 }
 
 .app {
-    background: url('/bg.png') center center / cover no-repeat, #ff6600 no-repeat center center fixed;
+    background: url('/bg.png') center center / cover no-repeat, #393838 no-repeat center center fixed;
     background-image: url("/bg.png");
     background-attachment: fixed;
     image-rendering: auto;
