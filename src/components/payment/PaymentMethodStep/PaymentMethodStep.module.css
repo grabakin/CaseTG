@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'SF-Pro-Display-Regular';
+    src: url('/SF-Pro-Display-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bowler';
+    src: url('/Bowler.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    background: #2e2e2e;
+    border-radius: 12px;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    position: relative;
+    margin-top: 12px;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 15px;
+    width: 85px;
+    height: 4px;
+    background: #2e2e2e;
+    z-index: 1;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.stepNumber {
+    background: transparent;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 1.23em;
+    font-weight: regular;
+    font-family: 'Bowler', sans-serif;
+    position: absolute;
+    top: -16px;
+    left: 17px;
+    z-index: 5;
+}
+
+.title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    font-family: 'SF-Pro-Display-Regular', sans-serif;
+    color: #9e9e9e
+}
+
+.methodsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.methodButton {
+    background: #2a2a2a;
+    border: 2px solid #4a4a4a;
+    border-radius: 8px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-height: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.methodButton:hover:not(.disabled) {
+    border-color: #6a6a6a;
+    background: #333;
+}
+
+.methodButton.selected {
+    border-color: #4CAF50;
+    background: #2a4a2a;
+}
+
+.methodButton.disabled {
+    background: #1a1a1a;
+    border-color: #333;
+    cursor: not-allowed;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    background: white;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+}

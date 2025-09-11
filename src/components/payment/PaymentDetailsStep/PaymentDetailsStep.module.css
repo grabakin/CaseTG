@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'SF-Pro-Display-Regular';
+    src: url('/SF-Pro-Display-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bowler';
+    src: url('/Bowler.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    background: #2e2e2e;
+    border-radius: 12px;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    position: relative;
+    margin-top: 12px;
+    transition: all 0.3s ease;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 15px;
+    width: 90px;
+    height: 4px;
+    background: #2e2e2e;
+    z-index: 1;
+}
+
+.container.disabled {
+    background: #2a2a2a;
+    border-color: #ffffff;
+    opacity: 0.5;
+}
+
+.container.disabled::before {
+    background: #2a2a2a;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.stepNumber {
+    background: transparent;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 1.23em;
+    font-weight: regular;
+    font-family: 'Bowler', sans-serif;
+    position: absolute;
+    top: -16px;
+    left: 17px;
+    z-index: 5;
+}
+
+.inputGroup {
+  margin-bottom: 16px;
+}
+
+.label {
+  display: block;
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-family: 'SF-Pro-Display-Regular',sans-serif;
+}
+
+.label.valid {
+  color: #87f55b;
+}
+
+.input {
+  width: 100%;
+  background: #2a2a2a;
+  border: 1px solid #4a4a4a;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 12px 16px;
+  color: #fff;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+  font-family: 'SF-Pro-Display-Regular', sans-serif;
+  letter-spacing: 1px;
+  overflow: visible;
+  text-indent: 2px;
+  line-height: 1.4;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #6a6a6a;
+}
+
+.input.valid {
+  border:2px solid #87f55b;
+}
+
+.input:disabled {
+  background: #1a1a1a;
+  border-color: #333;
+  color: #666;
+}
+
+.input::placeholder {
+  color: #666;
+}
+
+.bonusInfo {
+  margin-bottom: 20px;
+  padding: 0;
+  background: transparent;
+}
+
+.bonusText {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'SF-Pro-Display-Regular', sans-serif;
+  margin-bottom: 8px;
+}
+
+.bonusText .bonusPercentage {
+  color: #87f55b;
+  font-weight: bold;
+}
+
+.totalAmount {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: 'SF-Pro-Display-Regular', sans-serif;
+}
+
+.coinIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.topUpButton {
+  width: 100%;
+  background: #666;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.topUpButton.active {
+  background: #4CAF50;
+}
+
+.topUpButton.active:hover {
+  background: #45a049;
+}
+
+.topUpButton:disabled {
+  cursor: not-allowed;
+  background: #666;
+}
