@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 24px 0 16px 0;
+}
+
+.separator {
+    flex: 1;
+    height: 1px;
+    background: #3a3a3a;
+}
+
+.title {
+    font-family: 'Bowler', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    margin: 0;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+}

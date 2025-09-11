@@ -4,6 +4,7 @@ import BottomNavigation from "./components/layout/BottomNavigation/BottomNavigat
 import {type SetStateAction, useState} from "react";
 import ComingSoon from "./components/pages/ComingSoon/ComingSoon.tsx";
 import CasesPage from "./components/pages/CasesPage/CasesPage.tsx";
+import ProfilePage from "./components/profile/ProfilePage/ProfilePage.tsx";
 
 function App() {
     const [activeTab, setActiveTab] = useState("cases");
@@ -21,7 +22,7 @@ function App() {
             case "contract":
                 return <ComingSoon pageName="Контракт"/>;
             case "profile":
-                return <ComingSoon pageName="Профиль"/>;
+                return <ProfilePage/>;
         }
     };
     return (

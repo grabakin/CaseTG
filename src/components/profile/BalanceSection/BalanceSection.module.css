@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2a2a2a;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid #3a3a3a;
+}
+
+.balanceInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label {
+    font-family: 'SF-Pro-Display-Regular', sans-serif;
+    font-size: 14px;
+    color: #888;
+    font-weight: 400;
+}
+
+.balanceAmount {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.coinIcon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.amount {
+    font-family: 'SF-Pro-Display-Regular', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.topUpButton {
+    background: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: 'SF-Pro-Display-Regular', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.topUpButton:hover {
+    background: #45a049;
+}
+
+.topUpButton:active {
+    transform: translateY(1px);
+}
