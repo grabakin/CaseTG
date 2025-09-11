@@ -1,9 +1,9 @@
 import "./App.css";
-import Header from "./components/Header/Header.tsx";
-import BottomNavigation from "./components/BottomNavigation/BottomNavigation.tsx";
+import Header from "./components/layout/Header/Header.tsx";
+import BottomNavigation from "./components/layout/BottomNavigation/BottomNavigation.tsx";
 import {type SetStateAction, useState} from "react";
-import ComingSoon from "./components/ComingSoon/ComingSoon.tsx";
-import CasesPage from "./components/CasesPage/CasesPage.tsx";
+import ComingSoon from "./components/pages/ComingSoon/ComingSoon.tsx";
+import CasesPage from "./components/pages/CasesPage/CasesPage.tsx";
 
 function App() {
     const [activeTab, setActiveTab] = useState("cases");
