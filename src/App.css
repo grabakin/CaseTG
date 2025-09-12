@@ -13,11 +13,11 @@ html, body {
     backface-visibility: hidden;
     min-height: 100vh;
     position: relative;
-    overflow: hidden;
 }
 
 .main-content {
     padding: 16px;
+    padding-bottom: 100px;
     position: relative;
     z-index: 2;
 }
