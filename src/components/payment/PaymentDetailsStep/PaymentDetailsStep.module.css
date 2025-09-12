@@ -98,6 +98,18 @@
   line-height: 1.4;
 }
 
+/* Убираем стрелочки у input[type="number"] */
+.input[type="number"] {
+  appearance: textfield; /* Стандартное свойство */
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.input[type="number"]::-webkit-outer-spin-button,
+.input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Chrome, Safari, Edge */
+  margin: 0;
+}
+
 .input:focus {
   outline: none;
   border-color: #6a6a6a;
