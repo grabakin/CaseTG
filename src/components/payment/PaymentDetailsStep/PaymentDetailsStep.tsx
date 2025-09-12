@@ -22,7 +22,7 @@ const PaymentDetailsStep: React.FC<PaymentDetailsStepProps> = ({
   const bonusData = useMemo(() => {
     const promoCodes: { [key: string]: number } = {
       GWTP3: 15,
-      BONUS10: 10,
+      H435G: 10,
       EXTRA20: 20,
     };
 
