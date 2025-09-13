@@ -25,16 +25,16 @@ const PaymentMethodStep: React.FC<PaymentMethodStepProps> = ({
             available: true,
         },
         {
-            id: null,
-            name: '',
-            logo: '',
-            available: false,
+            id: 'webmoney' as PaymentMethod,
+            name: 'webmoney',
+            logo: '/webmoney_logo.png',
+            available: true,
         },
         {
-            id: null,
-            name: '',
-            logo: '',
-            available: false,
+            id: 'bitcoin' as PaymentMethod,
+            name: 'bitcoin',
+            logo: 'bitcoin_logo.png',
+            available: true,
         },
     ];
 
